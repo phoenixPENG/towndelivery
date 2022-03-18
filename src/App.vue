@@ -1,20 +1,22 @@
 <template>
-  <div>
+  <div id="app">
   <router-view></router-view>
-  <FootGudie></FootGudie>
+  <FooterGudie></FooterGudie>
   </div>
 </template>
 
 <script>
-import FootGudie from './components/FootGuide/FootGuide.vue'
+import FooterGudie from './components/FootGuide/FooterGuide.vue'
 export default {
   components:{
-    FootGudie
+    FooterGudie
   }
 }
 </script>
 
-<style scoped>
+<style lang="stylus" scoped>
  .app
-   color:red
+   width 100%
+   height 100%
+   background #f5f5f5
 </style>
