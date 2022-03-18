@@ -1,12 +1,12 @@
 <template>
   <div id="app">
   <router-view></router-view>
-  <FooterGudie></FooterGudie>
+  <FooterGudie v-show="$route.meta.showFooter"></FooterGudie>
   </div>
 </template>
 
 <script>
-import FooterGudie from './components/FootGuide/FooterGuide.vue'
+import FooterGudie from './components/FooterGuide/FooterGuide.vue'
 export default {
   components:{
     FooterGudie
